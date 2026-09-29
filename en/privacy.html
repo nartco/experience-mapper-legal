@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · Experience Mapper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@400;600&display=swap">
+<style>
+:root{--bg:#ECEAE3;--text:#15171A;--muted:#585D65;--line:rgba(21,23,26,.10);--glass:rgba(255,255,255,.62);--border:rgba(255,255,255,.9);--accent:#B8E84A;--deep:#3F6A00;--halo1:#D8F07A;--halo2:#BFD6E6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#07070C;--text:#ECEEF3;--muted:#9CA1B0;--line:rgba(255,255,255,.08);--glass:rgba(255,255,255,.05);--border:rgba(255,255,255,.13);--accent:#B6FF45;--deep:#C8FF72;--halo1:#3A1F74;--halo2:#1C3B63;color-scheme:dark}}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.6 "Space Grotesk",-apple-system,system-ui,sans-serif;min-height:100vh}
+.halo{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.halo i{position:absolute;border-radius:50%;filter:blur(70px)}
+.halo i:first-child{width:360px;height:360px;left:-120px;top:-40px;background:var(--halo1);opacity:.7}.halo i:last-child{width:320px;height:320px;right:-120px;top:420px;background:var(--halo2);opacity:.6}
+main{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:40px 20px 64px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.brand{font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+nav .links{display:flex;gap:16px;font-size:14px}nav a{color:var(--muted)}nav a[aria-current]{color:var(--text);font-weight:600;text-decoration:none}
+h1{font:400 clamp(40px,9vw,58px)/1.02 "Instrument Serif",Georgia,serif;margin:0 0 8px;letter-spacing:-.01em;text-wrap:balance}
+.updated{color:var(--muted);font-size:13px;margin:0 0 28px}
+section{background:var(--glass);border:1px solid var(--border);border-radius:24px;padding:20px 22px;margin:0 0 14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+h2{font-size:18px;margin:0 0 8px;font-weight:600}section p{margin:0 0 8px;max-width:64ch}section p:last-child{margin:0}
+a{color:var(--deep)}
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:24px}
+.card{display:block;text-decoration:none;color:inherit;background:var(--glass);border:1px solid var(--border);border-radius:24px;padding:22px}
+.card strong{display:block;font:400 28px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:6px}.card span{color:var(--muted);font-size:14px}
+.card:hover{border-color:var(--accent)}
+footer{color:var(--muted);font-size:13px;margin-top:32px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);margin-right:8px;vertical-align:middle}
+</style>
+</head>
+<body><div class="halo" aria-hidden="true"><i></i><i></i></div>
+<main>
+<nav><a class="brand" href="../index.html"><span class="dot"></span>Experience Mapper</a><div class="links"><a href="../en/privacy.html" aria-current="page">Privacy</a><a href="../en/terms.html">Terms</a><a href="../confidentialite.html">Français</a></div></nav>
+<h1>Privacy</h1><p class="updated">Version of 29 September 2026</p>
+<section><h2>In short</h2><p>Experience Mapper works without an account. Everything you record stays on your iPhone, in an encrypted database.</p><p>We never see, sell or share your journal.</p></section>
+<section><h2>What stays on your phone</h2><p>Your experiences, check-ins, sensations, notes, elements, hypotheses, research, game results, pulse, voice memos and photos are stored only on your device.</p><p>Voice memos and dictation are transcribed on the phone, offline: your voice is not sent.</p><p>Photos are copied into the app, without their location data, and don’t appear in your camera roll.</p></section>
+<section><h2>Apple Health</h2><p>If you turn it on in Researcher mode, the app reads your sleep to compare it with your experiences. It writes nothing to Health and this data never leaves the phone.</p></section>
+<section><h2>Anonymous statistics (optional)</h2><p>Only if you said yes: a few usage events (for example “experience ended”, with a rounded duration) are sent to Aptabase, with no identifier, no stored IP address and none of your journal content.</p><p>You can withdraw your consent at any time in Settings.</p></section>
+<section><h2>Subscription</h2><p>Payment is handled by Apple. To know whether your subscription is active, the app uses RevenueCat, which receives an anonymous purchase identifier, never your journal content.</p></section>
+<section><h2>Your data, your choice</h2><p>Settings → Data: export your whole journal to a file, import it, or erase everything.</p><p>Deleting the app permanently erases everything it contains.</p></section>
+<section><h2>Contact</h2><p>For any question: [contact address to be defined].</p></section>
+<footer>Everything stays on your iPhone. No account, no cloud.</footer>
+</main></body></html>
